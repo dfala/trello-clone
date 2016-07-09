@@ -1,5 +1,5 @@
 html {
-  background: url('https://images.unsplash.com/photo-1452473767141-7c6086eacf42?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=bb189814ba9cda719e9cf9be1f0c2711') no-repeat center center fixed;
+  background: url('https://images.unsplash.com/photo-1445251836269-d158eaa028a6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7c592fea2deb4ca7994a284bc4e81c03') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -11,7 +11,7 @@ body {
 }
 
 h3 {
-  margin-top: 0;
+  margin: 0 0 20px 0;
   font-weight: 200;
   text-transform: uppercase;
 }
@@ -28,19 +28,35 @@ h3 {
   }
 
   .list {
-    border: 1px solid #5d5d5d;
+    box-shadow: 0px 0px 20px -4px #3b3b3b;
     background-color: #fff;
     border-radius: 2px;
     width: 1000px;
     margin: 0 10px;
     padding: 20px;
+    position: relative;
   }
 
+    .delete-list {
+      position: absolute;
+      top: 22px;
+      right: 20px;
+      cursor: pointer;
+      color: #eee;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+      .delete-list:hover {
+        color: red;
+      }
+
   .card {
-    padding: 20px;
+    padding: 5px 10px;
+    color: #565656;
     margin: 10px 0;
-    border: 1px solid #5d5d5d;
-    border-radius: 2px;
+    border: 1px solid #cbcbcb;
+    border-radius: 4px;
     cursor: -webkit-grab;
   }
 
