@@ -5,13 +5,12 @@ angular.module('Trello')
 		restrict: 'E',
 		link: function (scope, elem, attrs) {
       $timeout(function () {
-        // $( ".row" ).sortable({
-        //   placeholder: "list-placeholder"
-        // });
-
         $( ".cards" ).sortable({
           placeholder: "card-placeholder",
-          connectWith: '.row > .list'
+          connectWith: '.row > .list',
+          update: function (event, ui) {
+            console.log(event);
+          }
         });
       }, 500);
 		}
