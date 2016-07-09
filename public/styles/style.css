@@ -37,6 +37,17 @@ h3 {
     position: relative;
   }
 
+    .list-placeholder {
+      box-shadow: 0px 0px 20px -4px #3b3b3b;
+      background-color: #ddd;
+      border-radius: 2px;
+      width: 800px;
+      height: 246px;
+      margin: 0 10px;
+      padding: 20px;
+      position: relative;
+    }
+
     .delete-list {
       position: absolute;
       top: 22px;
@@ -62,4 +73,13 @@ h3 {
 
     .card:hover {
       background-color: #eee;
+    }
+
+    .card-placeholder {
+      height: 30px;
+      background-color: #ddd;
+      margin: 10px 0;
+      border: 1px solid #cbcbcb;
+      border-radius: 4px;
+      cursor: -webkit-grab;
     }

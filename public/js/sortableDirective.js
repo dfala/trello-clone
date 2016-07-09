@@ -1,26 +1,19 @@
 angular.module('Trello')
 
-.directive('sortable', function () {
+.directive('sortable', function ($timeout) {
 	return {
 		restrict: 'E',
 		link: function (scope, elem, attrs) {
+      $timeout(function () {
+        // $( ".row" ).sortable({
+        //   placeholder: "list-placeholder"
+        // });
 
-		    $( ".column" ).sortable({
-		      connectWith: ".list",
-		      handle: ".list",
-		      placeholder: "list",
-		      activate: function (event, ui) {
-		      	$(ui.item).addClass('active-dragging');
-		      },
-		      deactivate: function (event, ui) {
-		      	$(ui.item).removeClass('active-dragging');
-		      },
-		      update: function (event, ui) {
-
-
-		      }
-		    });
-
+        $( ".cards" ).sortable({
+          placeholder: "card-placeholder",
+          connectWith: '.row > .list'
+        });
+      }, 500);
 		}
 	}
 })

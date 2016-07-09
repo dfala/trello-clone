@@ -14,7 +14,7 @@
   <body ng-controller="MainController">
 
     <section class="container">
-      <!-- <sortable> -->
+      <sortable>
         <div class="row">
 
 
@@ -22,8 +22,10 @@
             <h3>{{list.name}}</h3>
             <span class="delete-list">x</span>
 
-              <div class="card" ng-repeat="task in list.tasks track by $index">
-                {{task}}
+              <div class="cards">
+                <div class="card" ng-repeat="task in list.tasks track by $index">
+                  {{task}}
+                </div>
               </div>
 
             <div class="input-group">
@@ -33,7 +35,7 @@
           </div>
 
         </div>
-      <!-- </sortable> -->
+      </sortable>
     </section>
 
 
